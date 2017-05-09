@@ -1,3 +1,7 @@
+# VBBS IMAGE
+
+Current status: crashes early
+
 # Renegade BBS
 
 This image runs a telnettable Renegade BBS server inside Docker.
