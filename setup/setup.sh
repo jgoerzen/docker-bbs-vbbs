@@ -5,25 +5,15 @@ set -x
 
 # Download
 cd /tmp/setup
-wget http://renegadebbs.info/files/unofficial.rgbbsfullv120a.zip
+wget http://software.bbsdocumentary.com/IBM/DOS/VBBS/vbbs614a.zip
 
 sha256sum -c < sums
 
 cd /dos/drive_g
-unzip /tmp/setup/unofficial.rgbbsfullv120a.zip
-rm /tmp/setup/unofficial.rgbbsfullv120a.zip
-cd rg/DATA
-
-# set up all 9 nodes.
-for ASDF in 2 3 4 5 6 7 8 9; do
-  cp NODE1.DAT NODE$ASDF.DAT
-done
-mv /tmp/setup/MULTNODE.DAT .
-
-cd /dos/drive_g/rg
-
-# Patch the paths
-find . -type f -exec sed -i 's,C:\\RG,G:\\RG,g' {} \;
+mkdir vbbsinst
+cd vbbsinst
+unzip /tmp/setup/vbbs614a.zip
+rm /tmp/setup/vbbs614a.zip
 
 cd /dos
 
