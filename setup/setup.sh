@@ -36,7 +36,7 @@ rm -rf .git
 cd ..
 mv vbbsinst VBBS
 dpkg --purge git
-apt-get --purge autoremove
+apt-get -y --purge autoremove
 apt-get clean
 rm -rf /var/lib/apt/lists/*
 rm /root/.gitconfig
