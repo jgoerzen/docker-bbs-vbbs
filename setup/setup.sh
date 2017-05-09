@@ -46,4 +46,4 @@ cd /dos
 
 echo 2 > /dos/numnodes   # 2 nodes by default
 
-echo "devicehigh=z:\\bin\\nansi.sys" >> /etc/dosemu/freedos/config.sys
+echo "devicehigh=d:\\bin\\nansi.sys" >> /etc/dosemu/freedos/config.sys
